@@ -1,0 +1,147 @@
+*{ 
+    box-sizing: border-box;
+ }
+
+ html{
+    margin:0;  padding:0; 
+   }
+body{
+    margin:0;   
+    background:url(confetti.jpg);
+    background-size: 100%;
+    background-position:600% ;
+    background-repeat: no-repeat;
+    display:flex;
+   }
+
+#form{
+    padding: 5px;
+    background:rgba(10, 1, 5, 0.55);
+    color:#fff;
+    height: 677px;
+    width: 5000px;
+}
+
+    
+.container{
+        box-sizing:border-box;
+        justify-content:center;
+        height:auto;
+        width:40%;
+        background:rgba(10, 1, 5, 0.9);
+        color:#fff;
+        top:50%;
+        left:50%;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        font-family: Arial, Helvetica, sans-serif;;
+        padding:5px;
+        border-radius: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+    
+.info{       
+    
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.form-group{
+    margin:0px 10px 15px;
+    padding:0;
+    font-weight:bold;
+}
+#fname, #address, #email,#phone,#iname,#date,#event {
+    
+    
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    
+    
+    color:#fff;
+    font-size:16px;
+}
+
+
+
+
+#category{
+    background:none;
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid white;
+    outline:0;
+}
+
+#event{
+    padding:2px;
+}
+
+#date:hover{
+    background: rgb(189, 58, 40)
+} 
+
+.select, .singing, .dance, .skit, .fashionshow, .bandbattle{
+    background-color:black; 
+    color:white
+}
+
+button{
+    width:70px;
+    padding:7px;
+    margin-right:10px;
+    background: #fff;
+    color: rgb(22, 17, 14);
+    border: solid 1px rgb(252, 251, 250);
+    border-radius: 33px;
+    cursor: pointer;
+    transition:  all .38s ease-in-out;
+}
+
+button:hover{
+    background: rgb(184, 76, 27);
+    color: #fff;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    margin-right: 1px;
+
+}
+::placeholder{
+    color:rgb(92, 86, 86);
+}
+table tr td{
+    border: solid 1px #eee;
+    padding: 10px;
+} 
+
+
+table{
+    width:600px;
+    height:100px;
+    background:rgba(10, 1, 5, 0.8);
+    color:#fff;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    padding:0px 10px;
+    font-family: Arial, Helvetica, sans-serif;;
+    padding:50px;
+    border-radius: 15px;
+
+}
+input{
+    width: max-content;
+}
