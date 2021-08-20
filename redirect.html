@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+<body>
+    
+<div class="info">
+  <div id="output"></div>
+</div>
+
+<script>
+dispData();
+    function dispData(){
+        // console.log(JSON.parse(localStorage.getItem('formData')));
+ let{fname,addr,email,dob,gender,phone,iname,event,category,partis,acmd}=JSON.parse(localStorage.getItem('formData'));
+     var output=document.getElementById('output');
+     output.innerHTML=`
+    <table>
+        <tbody>
+            <tr>
+              <td>First Name-</td>
+              <td>${fname}</td>
+            </tr>
+ 
+            <tr>
+              <td>Address-</td>
+              <td>${addr}</td>
+            </tr>
+ 
+            <tr>
+              <td>Email Address-</td>
+              <td>${email}</td>
+            </tr>
+ 
+            <tr>
+              <td>Date of Birth-</td>
+              <td>${dob}</td>
+            </tr>
+
+            <tr>
+              <td>Gender-</td>
+              <td>${gender}</td>
+            </tr>
+
+            <tr>
+               <td>Contact No.-</td>
+               <td>${phone}</td>
+            </tr>
+
+            <tr>
+               <td>Name of Institution-</td>
+               <td>${iname}</td>
+            </tr>
+
+            <tr>
+                <td>Event-</td>
+                <td>${event}</td>
+            </tr>
+
+            <tr>
+                <td>Category-</td>
+                <td>${category}</td>
+            </tr>
+
+            <tr>
+                <td>Number of Participants-</td>
+                <td>${partis}</td>
+            </tr>
+
+            <tr>
+                <td>Accommodation-</td>
+                <td>${acmd}</td>
+            </tr>
+        </tbody>
+    </table>
+    `;
+    }
+</script>
+
+</body>
+</html>
