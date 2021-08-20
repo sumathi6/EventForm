@@ -8,9 +8,7 @@
     
 </head>
 <body>
-
 <form id="form">
-    
     <div class="container">
         
         <h1>Cultural Event Registration</h1>
@@ -57,9 +55,9 @@
                 <label for="event">Event:</label>
                 <select name="event" id="event" class="event">
                     <option class="select" disabled hidden selected>Select</option>
-                    <option class ="singing" label="Singing"     value="Singing">Singing</option>
-                    <option class ="dance" label="Dance"       value="Dance">Dance</option>
-                    <option class ="skit" label="Skit"        value="Skit">Skit</option>
+                    <option class ="singing" label="Singing" value="Singing">Singing</option>
+                    <option class ="dance" label="Dance" value="Dance">Dance</option>
+                    <option class ="skit" label="Skit" value="Skit">Skit</option>
                     <option class ="fashionshow" label="Fashion Show" value="Fashion Show">Fashion Show</option>
                     <option class ="bandbattle" label="Band Battle"  value="Band Battle">Band Battle</option>
                   </select>
@@ -88,7 +86,7 @@
             </div>
 
             <div class="form-group button-group">
-                <button>Reset</button>
+                <button id="cancel">Reset</button>
                 <button>Submit</button>
             </div>
         </div>
@@ -109,15 +107,11 @@ form.addEventListener("blur",function(event){
             true
             );
 
-let btnClear = document.querySelector('button');
-let inputs = document.querySelectorAll('input');
-
-btnClear.addEventListener('click', () => {
-    inputs.forEach(input =>  input.value = '');
-    document.querySelector('input[name="gender"]:checked').checked = false;
-    document.querySelector('input[name="category"]:checked').checked = false;
+const cancel = document.getElementById('cancel');
+cancel.addEventListener('click', () => {
     
-    
+    document.getElementById('form').reset();
+ 
 });  
 
 form.addEventListener("submit",(e)=>{
@@ -138,7 +132,6 @@ form.addEventListener("submit",(e)=>{
             localStorage.setItem('formData', JSON.stringify(formData));
             //console.log(localStorage.getItem('formData'));
             alert('Submitted Successfully');
-            //dispData();
             e.preventDefault();
             
 });
