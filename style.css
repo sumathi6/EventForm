@@ -56,38 +56,44 @@ h1{
     padding:0;
     font-weight:bold;
 }
-#fname, #address, #email,#phone,#iname,#date,#event {
-    
-    
+
+.full input{
+    width:100%;
+    border:2px solid #f0f0f0;
+    border-radius:5px;
+    display:block;
+
     border:none;
     border-bottom:1px solid #fff;
     background:transparent;
     outline:none;
-    
-    
     color:#fff;
     font-size:16px;
 }
 
-
-
-
-#category{
-    background:none;
-    color:white;
-    padding:5px;
-    border-radius: 5px;
-    border:1px solid white;
-    outline:0;
+.diff input{
+    border:2px solid #f0f0f0;
+    border-radius:5px;
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    color:#fff;
+    font-size:16px;
 }
+
+.form-group input:focus{
+    outline:0;
+    border: 3px solid rgb(125, 9, 138);
+    
+    
+}
+
 
 #event{
     padding:2px;
 }
 
-#date:hover{
-    background: rgb(189, 58, 40)
-} 
 
 .select, .singing, .dance, .skit, .fashionshow, .bandbattle{
     background-color:black; 
@@ -100,14 +106,14 @@ button{
     margin-right:10px;
     background: #fff;
     color: rgb(22, 17, 14);
-    border: solid 1px rgb(252, 251, 250);
+    border: solid 2.5px rgb(252, 251, 250);
     border-radius: 33px;
     cursor: pointer;
     transition:  all .38s ease-in-out;
 }
 
 button:hover{
-    background: rgb(184, 76, 27);
+    background: rgb(125, 9, 138);
     color: #fff;
 }
 
@@ -118,7 +124,7 @@ button:hover{
 
 }
 ::placeholder{
-    color:rgb(92, 86, 86);
+    color:rgb(73, 69, 69);
 }
 table tr td{
     border: solid 1px #eee;
